@@ -29,6 +29,16 @@ chattadata.get(id="nvdi-c4tt").geojson()
 
 chattadata.get(title="Vehicle Incidents").csv()
 "Incident Number,Incident Date,..."
+
+# same as chattadata.insert
+chattadata.append(id="nvdi-c4tt", data=[...])
+
+chattadata.replace(id="nvdi-c4tt", data=[...])
+
+# deletes all the data (replacing with nothing)
+chattadata.truncate(id="nvdi-c4tt")
+
+chattadata.upsert(id="nvdi-c4tt", data=[...])
 ```
 
 ## advanced usage
